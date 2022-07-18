@@ -1,10 +1,93 @@
-.App {
+
+
+body {
+  background-color: var(--color-background);
+  /* padding: 0% 5% 0% 5%; */
+  max-width: 1800px;
+  margin: auto;
   text-align: center;
+  
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
+  align-items:flex-start;
+  filter: drop-shadow(5px 5px 5px var(--color-shadow));
+}
+
+.color-nav {
+  background-color: var(--color-background);
+  box-shadow: 0px -5px 10px 0px var(--color-shadow);
+  /* position: sticky; */
+  top: 0;
+  
+}
+
+.box {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+ 
+}
+
+.paper {
+  padding-bottom: 20px;
+}
+
+.loading{
+  margin-top: 100px;
+}
+
+.slider {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 15px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.combo{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.diag {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-group {
+  padding: 5px;
+}
+
+.alignleft {
+  text-align: justify;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--color-foreground);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +96,22 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heat-map {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--color-foreground);
+}
+
+.topo-tx {
+  padding-top: 20px;
 }
 
 @keyframes App-logo-spin {

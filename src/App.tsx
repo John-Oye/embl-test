@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import {FC} from 'react';
+import APIContextProvider from './components/Context/apiContext';
 import './App.css';
+import  MyResponsiveHeatMap  from './components/MyResponsiveHeatMap';
+import Header from './components/common/Header';
+import ExpressionSelector from './components/common/ExpressionSelector';
 
-function App() {
+
+
+
+const App: FC =()=> {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <APIContextProvider>
+      <div>
+            <Header />
+            <ExpressionSelector />
+            <MyResponsiveHeatMap  />
+               
+      </div>
+    </APIContextProvider>
   );
 }
 
 export default App;
+
+
+
