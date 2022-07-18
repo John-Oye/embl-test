@@ -25,6 +25,7 @@ yarn start
 
 Below is the structure the project src folder:
 
+```
 src
 ├── assets
 │ └── images
@@ -52,5 +53,7 @@ src
 ├── package.json
 ├── tsconfig.json
 └── yarn.lock
+
+```
 
 Code implementation by Johnson Oyeniyi (https://johnoye.com).
